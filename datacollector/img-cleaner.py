@@ -1,14 +1,14 @@
 import os
 import pandas as pd
 
-# 데이터셋 경로
-dataset_root = "data-collector/dataset"
+# 데이터셋 루트 경로
+dataset_root = r"C:\Users\USER\Desktop\dataset"
 
-# 기존 CSV 파일 경로 (수정할 파일)
-csv_file = "data-collector/dataset/data_labels.csv"
+# 기존 CSV 파일 경로 (오류 수정)
+csv_file = os.path.join(dataset_root, "data_labels.csv") # 🌟 os.path.join 사용!
 
-# 새로운 CSV 파일 경로
-new_csv_file = "data-collector/dataset/data_labels_updated.csv"
+# 새로운 CSV 파일 경로 (오류 수정)
+new_csv_file = os.path.join(dataset_root, "data_labe_update.csv") # 🌟 os.path.join 사용!
 
 # CSV 파일 읽기
 df = pd.read_csv(csv_file)

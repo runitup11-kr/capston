@@ -14,18 +14,23 @@ from training.model import PilotNet
 torch.backends.cudnn.benchmark = True
 
 
+
+
+
 def train():
     # =====================
     # 1. Hyperparameters
     # =====================
-    csv_filename = "data_labels_updated.csv"
-    dataset_root = "datacollector/dataset"
+    csv_filename = "data_labe_update.csv"
+    dataset_root = r"C:\Users\USER\Desktop\dataset"
     num_epochs = 20
     batch_size = 128
     learning_rate = 5e-4
     weight_decay = 1e-4
     split_ratio = 0.8
 
+
+    
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"[INFO] device = {device}")
 
