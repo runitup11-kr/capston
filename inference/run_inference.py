@@ -10,7 +10,7 @@ import datacollector.hw_control.drive as drive
 import datacollector.hw_control.input_utils as input_utils
 
 
-ANGLE_LIST = [30, 60, 90, 120, 150]
+ANGLE_LIST = [30,40,50,70,100,110,120,130,140,150]
 
 
 def main():
