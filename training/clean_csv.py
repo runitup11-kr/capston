@@ -4,7 +4,7 @@ import pandas as pd
 # 🌟🌟 1. 경로 설정 (train_pilotnet.py에서 사용한 경로와 일치시켜야 합니다!) 🌟🌟
 DATASET_ROOT = r"C:\Users\USER\Desktop\dataset"
 OLD_CSV_FILENAME = "data_labels.csv"
-NEW_CSV_FILENAME = r"C:\Users\USER\Desktop\capston\course-autodrive\training\clean_csv.py"
+NEW_CSV_FILENAME = r"C:\Users\USER\Desktop\dataset\data_labels_cleaned.csv"
 
 # ----------------------------------------------------
 

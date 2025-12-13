@@ -91,6 +91,7 @@ class RCDataset(Dataset):
         rel_path = row["image_path"]
         angle = int(row["servo_angle"])
         img_path = os.path.join(self.image_root, rel_path)
+        
 
         # 1) 이미지 로드 (BGR)
         img_bgr = cv2.imread(img_path)
